@@ -1,0 +1,182 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hello", "Hi", "Hey", "Greetings"],
+        "responses": [
+          "Hello! Welcome to TravelPal, your personal travel assistant. How can I assist you today?",
+          "Hi there! How can I help you with your travel plans?",
+          "Hey! It's great to see you. What can I do for you today?"
+        ]
+      },
+      {
+        "tag": "destination_recommendation",
+        "patterns": ["Recommend a destination", "Where should I go?", "Suggest a travel destination"],
+        "responses": [
+          "Sure! I can help you find the perfect destination. What type of vacation are you looking for?",
+          "Certainly! What kind of travel experience are you interested in? Let's find your dream destination.",
+          "Great choice! Let's start by exploring some travel destinations. What are your preferences?"
+        ]
+      },
+      {
+        "tag": "destination_preferences",
+        "patterns": ["I like beaches", "Adventure trip", "Cultural experience", "Surprise me"],
+        "responses": [
+          "That's fantastic! Beaches, adventure, and culture are all wonderful choices. Please provide your travel dates and preferred regions.",
+          "Excellent! Your interests sound exciting. To narrow it down, when are you planning to travel and where are you considering?",
+          "Sounds like you're open to adventure! To help you decide, could you share your travel dates and any region preferences?"
+        ]
+      },
+      {
+        "tag": "book_flight",
+        "patterns": ["Book a flight", "Flights", "I need to fly somewhere"],
+        "responses": [
+          "Excellent choice! Let's start by providing your departure and arrival cities and travel dates.",
+          "Great decision! To get you on your way, please tell me your departure and arrival cities and your preferred travel dates.",
+          "Sure thing! To book your flight, I'll need to know your departure and arrival cities, as well as your travel dates."
+        ]
+      },
+      {
+        "tag": "flight_details",
+        "patterns": ["I'm flying from [departure_city] to [arrival_city] on [travel_date]", "From [departure_city] to [arrival_city] on [travel_date]"],
+        "responses": [
+          "Thank you for providing your flight details. Now, let's find suitable accommodations. What are your check-in and check-out dates for your stay?",
+          "Got it! Your flight details are noted. Let's move on to booking your accommodations. When will you be checking in and out?",
+          "Perfect! Your flight details are confirmed. Next, please specify your check-in and check-out dates for accommodations."
+        ]
+      },
+      {
+        "tag": "book_accommodation",
+        "patterns": ["Book accommodation", "Hotels", "Where should I stay?"],
+        "responses": [
+          "Of course! I can assist you in finding suitable accommodations. Please specify your check-in and check-out dates.",
+          "Certainly! Let's explore lodging options. When do you plan to check in and check out?",
+          "Absolutely! To find you the perfect place to stay, could you provide your check-in and check-out dates?"
+        ]
+      },
+      {
+        "tag": "accommodation_dates",
+        "patterns": ["I'll be arriving on [check_in_date] and departing on [check_out_date]", "Check-in on [check_in_date] and check-out on [check_out_date]"],
+        "responses": [
+          "Thank you for providing your accommodation dates. What type of lodging are you interested in? (e.g., hotel, resort, Airbnb)",
+          "Great! Your accommodation dates are set. What type of lodging would you prefer? (e.g., hotel, resort, Airbnb)",
+          "Noted! Your check-in and check-out dates are confirmed. What kind of lodging are you looking for? (e.g., hotel, resort, Airbnb)"
+        ]
+      },
+      {
+        "tag": "accommodation_preferences",
+        "patterns": ["I prefer a [lodging_type] accommodation", "Any specific lodging preferences?"],
+        "responses": [
+          "Understood! Do you have any specific preferences for your chosen [lodging_type], or should I suggest a variety of options?",
+          "Great choice! Preferences make a difference. Do you have any specific requests for your [lodging_type], or should I provide a mix of options?",
+          "Noted! Preferences are important. Is there anything specific you'd like in your [lodging_type], or should I offer a range of choices?"
+        ]
+      },
+      {
+        "tag": "accommodation_budget",
+        "patterns": ["My budget is around $[budget_amount] per night", "Budget: $[budget_amount]", "I'm flexible with the budget"],
+        "responses": [
+          "Thank you for specifying your budget. I'll now search for accommodations that match your criteria. Please wait a moment.",
+          "Got it! I'll search for [budget_amount]-per-night accommodations within your preferences. This won't take long. Please hold on.",
+          "Noted! Your budget is set. I'll find you some great options within that range. Just a moment, please."
+        ]
+      },
+      {
+        "tag": "accommodation_suggestions",
+        "patterns": ["Show me the options", "What accommodations do you recommend?", "Find me some places to stay"],
+        "responses": [
+          "Certainly! Here are some accommodations that match your criteria:",
+          "Sure thing! Here are some lodging options that fit your preferences:",
+          "Of course! Below are some great choices for your stay:"
+        ]
+      },
+      {
+        "tag": "activity_recommendation",
+        "patterns": ["What activities are there?", "Suggest things to do", "Activities at my destination"],
+        "responses": [
+          "Of course! To provide you with the best recommendations, could you please tell me your interests or the type of activities you enjoy?",
+          "Certainly! I'd love to suggest some activities. What are your interests, or what type of activities do you have in mind?",
+          "Absolutely! Let's plan some activities. What are your interests or the type of activities you prefer?"
+        ]
+      },
+      {
+        "tag": "activity_preferences",
+        "patterns": ["I enjoy [activity_type]", "I'd like to go [activity_type]", "Surprise me"],
+        "responses": [
+          "That's wonderful! [activity_type] activities can be very exciting. Where would you like to explore these activities?",
+          "Excellent choice! [activity_type] is fantastic. Where would you like to experience these activities?",
+          "Great! [activity_type] it is. Where shall we plan these exciting activities?"
+        ]
+      },
+      {
+        "tag": "restaurant_recommendation",
+        "patterns": ["Recommend restaurants", "Where to eat", "Find me a restaurant"],
+        "responses": [
+          "Absolutely! To suggest the perfect restaurant, could you let me know your cuisine preferences or dietary restrictions?",
+          "Certainly! I can recommend some great restaurants. Do you have any cuisine preferences or dietary restrictions?",
+          "Of course! Let's find you a fantastic restaurant. Any specific cuisine preferences or dietary requirements?"
+        ]
+      },
+      {
+        "tag": "restaurant_preferences",
+        "patterns": ["I prefer [cuisine_type] cuisine", "I'm open to various cuisines", "I have dietary restrictions"],
+        "responses": [
+          "Thank you for sharing your preferences. I'll find some great restaurant options for you. Anything specific you're craving?",
+          "Noted! [cuisine_type] cuisine it is. I'll suggest some delicious options. Any specific dishes you're in the mood for?",
+          "Great! [cuisine_type] cuisine is on the menu. I'll find some top-notch restaurants for you. Any dietary restrictions I should be aware of?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Goodbye", "See you later", "Bye"],
+        "responses": [
+          "Goodbye! If you have any more questions or need assistance in the future, feel free to return. Have a fantastic trip!",
+          "See you later! Safe travels, and don't hesitate to reach out if you need help in the future.",
+          "Bye for now! Have an amazing trip, and remember, I'm here whenever you need travel assistance."
+        ]
+      }
+    ],
+    "context": {
+      "destination_recommendation": {
+        "next_intent": "destination_preferences",
+        "response": "Great! What type of vacation are you looking for? For example, beach, adventure, culture, etc."
+      },
+      "book_flight": {
+        "next_intent": "flight_details",
+        "response": "Excellent! Please provide your departure and arrival cities, as well as your travel dates."
+      },
+      "flight_details": {
+        "next_intent": "book_accommodation",
+        "response": "Thank you for providing your flight details. Now, let's find suitable accommodations. What are your check-in and check-out dates for your stay?"
+      },
+      "book_accommodation": {
+        "next_intent": "accommodation_dates",
+        "response": "Of course! Please specify your check-in and check-out dates."
+      },
+      "accommodation_dates": {
+        "next_intent": "accommodation_preferences",
+        "response": "Thank you for providing your accommodation dates. What type of lodging are you interested in? (e.g., hotel, resort, Airbnb)"
+      },
+      "accommodation_preferences": {
+        "next_intent": "accommodation_budget",
+        "response": "Got it! Do you have a budget range in mind for your lodging, or should I suggest options across different price ranges?"
+      },
+      "accommodation_budget": {
+        "next_intent": "accommodation_suggestions",
+        "response": "Thank you for specifying your budget. I'll now search for accommodations that match your criteria. Please wait a moment."
+      },
+      "activity_recommendation": {
+        "next_intent": "activity_preferences",
+        "response": "Of course! To provide you with the best recommendations, could you please tell me your interests or the type of activities you enjoy?"
+      },
+      "activity_preferences": {
+        "next_intent": "restaurant_recommendation",
+        "response": "That's wonderful! [activity_type] activities can be very exciting. Where would you like to explore these activities?"
+      },
+      "restaurant_recommendation": {
+        "next_intent": "goodbye",
+        "response": "Certainly! I'll find some great restaurant options for you. Anything specific you're craving?"
+      }
+    }
+  }
+  
